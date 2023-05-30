@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(1, 20, 72);
+}
+
+.texto{
+    position: absolute;
+    width: 42%;
+    height: 60%;
+    left: 12%;
+    top: 15%;
+    border: none;
+    font-family: "inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 150%;
+    background-color: rgb(1, 20, 72);
+    color: rgb(49, 236, 214);
+}
+
+.texto::placeholder{
+   color: rgb(49, 236, 214);
+}
+
+.texto:focus, .texto:active{
+    border: none;
+    outline: none;
+}
+
+.terminos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 8px;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top:80%;
+    
+}
+
+.terminos p{
+    font-family: "inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: rgb(12, 191, 155);
+    opacity: 0.8;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1% 0;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 82%;
+    
+}
+
+.btn-encriptar{
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 25%;
+    background-color: rgb(3, 167, 112);
+    border-radius: 25px;
+    font-family: "inter";
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center ;
+    color: rgb(3, 3, 86);
+}
+
+.btn-desencriptar{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2%;
+    gap: 8%;
+    width: 25%;
+    background: rgb(8, 35, 7);
+    border-radius: 25px;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: rgb(167, 233, 226);
+
+}
+
+.btn-desencriptar:hover, .btn-encriptar:hover{
+    margin: 0.3%;
+    width: 24.5%;
+    padding: 1.8%;
+}
+
+.encriptado{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 30%;
+    height: 90%;
+    left: 60%;
+    top:5% ;
+    background: white;
+    box-shadow: 0px 24px 32px -8px rgba(172, 255, 47, 0.157);
+    border-radius: 32px;
+
+}
+
+.mensaje-encriptado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    gap: 16px;
+    position: absolute;
+    width: 100%;
+    top: 65%;
+    text-align: center;
+}
+
+.mensaje-encriptado h2{
+    width: 60%;
+    font-family: "inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: blueviolet;
+}
+
+.mensaje-encriptado p{
+    width: 80%;
+    font-family: "inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: rgb(14, 84, 183);
+}
+
+.encriptado img{
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    top: 15%;
+
+}
+
+@media (max-width: 57.5em) {
+    .container{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .Encriptador{
+          width: 100%;
+
+    }
+
+    .texto{
+        width: 80%;
+        height: 60%;
+        left: 10%;
+        top: 5%;
+
+    }
+    .banner{
+        width: 80%;
+        left: 10%;
+        top: 67%;
+
+    }
+
+    .banner p{
+        font-size: 16px;
+
+    }
+
+    .botones{
+        width: 80%;
+        left: 10%;
+        top: 70%;
+
+    }
+
+    .encriptar, .desencriptar{
+        width: 48%;
+        border-radius: 16px;
+
+    }
+
+    .encriptar:hover, .desencriptar:hover{
+        margin: 0.3%;
+        width: 47.5%;
+        padding: 1.8%;
+
+    }
+
+    .encriptado{
+        width: 80%;
+        height: 15%;
+        left: 10%;
+        top: 80%;
+
+    }
+    .mensaje-encriptado{
+        width: 100%;
+        top: 5%;
+
+    }
+    .encriptado img{
+        top: 0;
+        display: none;
+        visibility: hidden;
+    }
+
+
+}
